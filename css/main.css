@@ -414,10 +414,20 @@ img {
 
 .crew__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% + 2 * 15px);
+  margin: -15px;
 }
 
-.crew__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 1199px) {
+  .crew__list {
+    width: 768px;
+  }
+}
+
+.crew__item {
+  margin: 15px;
 }
 
 .crew .crew__item {
