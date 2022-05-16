@@ -10,6 +10,7 @@ html {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   padding: 0 15px;
@@ -110,6 +111,7 @@ img {
 }
 
 .section__title {
+  width: 100%;
   margin-bottom: 50px;
   font-style: normal;
   font-weight: 700;
@@ -355,17 +357,37 @@ img {
   color: #757575;
 }
 
+.activity {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .activity {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .activity__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% + 2 * 15px);
+  margin: -15px;
 }
 
 .activity__item {
   display: flex;
   position: relative;
+  max-width: 370px;
+  max-height: 294px;
+  margin: 15px;
 }
 
-.activity__item:not(:last-child) {
-  margin-right: 30px;
+.activity__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .activity__text {
@@ -374,7 +396,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  padding: 27px 15px;
   width: 100%;
   font-weight: 700;
   font-size: 14px;
