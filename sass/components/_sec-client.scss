@@ -1,13 +1,38 @@
 .client {
   &__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    margin: -15px;
+
+    @media screen and (max-width: 767px) {
+      width: 450%;
+    }
+
+    @media screen and (max-width: 1199px) {
+      width: 738px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+    }
   }
 
   &__item {
-    &:not(:last-child) {
-      margin-right: 30px;
+    margin: 15px;
+
+    @media screen and (max-width: 767px) {
+      width: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (max-width: 1199px) {
+      width: calc((100% - 6 * 15px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 12 * 15px) / 6);
     }
   }
 }
