@@ -1,0 +1,29 @@
+.address {
+  display: flex;
+  &__item {
+    height: 21px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  &__link {
+    color: $white-color;
+  }
+
+  &__email,
+  &__tel {
+    color: $text-grey-footer;
+    transform: color $transition;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

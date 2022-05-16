@@ -1,0 +1,28 @@
+.client {
+  &__item {
+    color: $soc-icon-grey;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color: currentColor;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

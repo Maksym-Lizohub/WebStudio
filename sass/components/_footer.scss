@@ -1,0 +1,21 @@
+.footer {
+  padding: 63px 0 57px 0;
+  background-color: $footer-bcg;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__social {
+    margin-left: auto;
+  }
+
+  &__submit {
+    margin-left: 93px;
+  }
+}

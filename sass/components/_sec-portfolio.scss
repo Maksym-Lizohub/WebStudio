@@ -1,0 +1,17 @@
+.portfolio {
+  &__filter {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__item {
+    margin: 15px;
+  }
+}
