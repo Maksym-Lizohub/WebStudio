@@ -7,16 +7,6 @@
 
     margin: -15px;
 
-    @media screen and (max-width: 767px) {
-      width: 450px + 30px;
-    }
-
-    @media screen and (max-width: 1199px) {
-      width: 738px + 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: calc(100% + 2 * 15px);
-    }
+    width: calc(100% + 30px);
   }
 }

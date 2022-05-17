@@ -3,11 +3,11 @@
     color: $soc-icon-grey;
     margin: 15px;
 
-    @media screen and (max-width: 480px) {
-      width: calc((100% - 2 * 15px) / 1);
+    @media screen and (max-width: 479px) {
+      width: 100%;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
       width: calc((100% - 4 * 15px) / 2);
     }
 

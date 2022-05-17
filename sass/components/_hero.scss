@@ -1,5 +1,9 @@
 .hero {
-  padding: 200px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 118px 0;
 
   background-image: linear-gradient(
       to right,
@@ -12,16 +16,26 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
+
   &__title {
     margin-bottom: 30px;
+    width: 100%;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.75;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white-color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__button {

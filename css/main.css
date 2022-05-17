@@ -17,6 +17,24 @@ html {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .checkbox {
   position: absolute;
   width: 1px;
@@ -96,6 +114,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1199px) {
@@ -112,13 +131,21 @@ img {
 
 .section__title {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .header {
@@ -244,22 +271,40 @@ img {
 }
 
 .hero {
-  padding: 200px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 118px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bkg.jpg"), linear-gradient(to right, #c4c4c4, #c4c4c4);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
+
 .hero__title {
   margin-bottom: 30px;
+  width: 100%;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.75;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -280,10 +325,6 @@ img {
 
 .hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
-}
-
-.section.vision {
-  padding-bottom: 0;
 }
 
 .vision__list {
@@ -337,7 +378,6 @@ img {
 }
 
 .vision__lable {
-  text-align: center;
   width: 100%;
   margin-bottom: 10px;
   font-weight: 700;
@@ -345,6 +385,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .vision__lable {
+    text-align: center;
+  }
 }
 
 .vision__text {
@@ -359,6 +405,7 @@ img {
 
 .activity {
   display: none;
+  padding-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -420,12 +467,6 @@ img {
   margin: -15px;
 }
 
-@media screen and (max-width: 1199px) {
-  .crew__list {
-    width: 768px;
-  }
-}
-
 .crew__item {
   margin: 15px;
 }
@@ -433,9 +474,29 @@ img {
 .crew .crew__item {
   display: flex;
   flex-direction: column;
-  width: 270px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 767px) {
+  .crew__photo {
+    width: 450px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .crew__photo {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .crew__photo {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .crew__label {
@@ -444,6 +505,12 @@ img {
   padding: 30px;
   border-radius: 0px 0px 4px 4px;
   background-color: white;
+}
+
+@media screen and (max-width: 1199px) {
+  .crew__label {
+    padding-bottom: 24px;
+  }
 }
 
 .crew__name {
@@ -495,24 +562,7 @@ img {
   align-items: center;
   justify-content: center;
   margin: -15px;
-}
-
-@media screen and (max-width: 767px) {
-  .client__list {
-    width: 480px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .client__list {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .client__list {
-    width: calc(100% + 2 * 15px);
-  }
+  width: calc(100% + 30px);
 }
 
 .client__item {
@@ -520,13 +570,13 @@ img {
   margin: 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .client__item {
-    width: calc((100% - 2 * 15px) / 1);
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .client__item {
     width: calc((100% - 4 * 15px) / 2);
   }

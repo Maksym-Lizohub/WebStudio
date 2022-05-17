@@ -1,7 +1,4 @@
 .section {
-  &.vision {
-    padding-bottom: 0;
-  }
 }
 
 .vision {
@@ -54,7 +51,6 @@
   }
 
   &__lable {
-    text-align: center;
     width: 100%;
 
     margin-bottom: 10px;
@@ -64,6 +60,10 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      text-align: center;
+    }
   }
 
   &__text {
