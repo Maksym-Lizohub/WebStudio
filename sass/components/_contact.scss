@@ -1,7 +1,29 @@
 .contact {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
   &__list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    margin-top: auto;
+    margin-bottom: 64px;
+    gap: 32px;
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      flex-direction: column;
+      gap: 0;
+      margin-left: 84px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 305px;
+    }
   }
 
   &__item {
@@ -12,7 +34,13 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
   }
 
   &__link {
@@ -31,8 +59,87 @@
     }
   }
 
+  &__email {
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+
+      color: #757575;
+    }
+  }
+
+  &__tel {
+    @media screen and (max-width: 767px) {
+      font-size: 34px;
+      line-height: 40px;
+      color: #2196f3;
+    }
+  }
+
   &__icon {
-    margin-right: 10px;
     fill: currentColor;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+      &--envelope {
+        width: 14px;
+        height: 10px;
+      }
+
+      &--tel {
+        width: 10px;
+        height: 14px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      &--envelope {
+        width: 16px;
+        height: 12px;
+      }
+
+      &--tel {
+        width: 10px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.header-tab-desk {
+  .contact__email {
+    @media screen and (min-width: 768px) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      color: currentColor;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: currentColor;
+    }
+  }
+  .contact__tel {
+    @media screen and (min-width: 768px) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      color: currentColor;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: currentColor;
+    }
   }
 }
