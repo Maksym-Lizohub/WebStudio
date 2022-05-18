@@ -617,8 +617,17 @@ img {
   fill: currentColor;
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 15px 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
 }
 
 .filter__link {
@@ -643,9 +652,7 @@ img {
 }
 
 .portfolio__filter {
-  display: flex;
   margin-bottom: 50px;
-  justify-content: center;
 }
 
 .portfolio__list {
