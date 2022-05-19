@@ -8,3 +8,9 @@ html {
   box-sizing: inherit;
 }
 
+.no-scroll {
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    overflow: auto;
+  }
+}

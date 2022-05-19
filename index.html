@@ -216,6 +216,8 @@
             <li class="activity__item">
               <img
                 class="activity__img"
+                srcset="./images/img1-370.jpg 370w, ./images/img1-740.jpg 740w"
+                sizes="(min-width: 1200px) 370px"
                 src="./images/img1.jpg"
                 alt="Написанием кода"
               />
@@ -225,6 +227,8 @@
             <li class="activity__item">
               <img
                 class="activity__img"
+                srcset="./images/img2-370.jpg 370w, ./images/img2-740.jpg 740w"
+                sizes="(min-width: 1200px) 370px"
                 src="./images/img2.jpg"
                 alt="Разработка приложений для телефона"
               />
@@ -234,6 +238,8 @@
             <li class="activity__item">
               <img
                 class="activity__img"
+                srcset="./images/img3-370.jpg 370w, ./images/img3-740.jpg 740w"
+                sizes="(min-width: 1200px) 370px"
                 src="./images/img3.jpg"
                 alt="Подбор цветовой гаммы"
               />
@@ -737,9 +743,12 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
                 <span class="policy__text"
-                  >Соглашаюсь с рассылкой и принимаю&nbsp</span
+                  >Соглашаюсь с рассылкой и принимаю&nbsp<a
+                    href="#"
+                    class="policy__link"
+                    >Условия договора</a
+                  ></span
                 >
-                <a href="#" class="policy__link">Условия договора</a>
               </label>
             </li>
           </ul>
@@ -754,6 +763,12 @@
         </button>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./js/modal.js"></script>
   </body>

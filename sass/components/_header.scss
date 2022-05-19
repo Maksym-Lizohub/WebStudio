@@ -38,10 +38,14 @@
     display: none;
   }
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 .menu-btn {
-  position: relative;
-  margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 
   display: flex;
   align-items: center;
@@ -55,6 +59,10 @@
 
   cursor: pointer;
   z-index: 10;
+
+  &:focus {
+    fill: $accent-color;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -114,6 +122,9 @@
 
 .mobile-menu.is-open {
   transform: translateX(0);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .icon-open {
