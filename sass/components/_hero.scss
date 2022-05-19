@@ -4,20 +4,93 @@
   justify-content: center;
   align-items: center;
   padding: 118px 0;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/hero-bkg.jpg'),
-    linear-gradient(to right, rgba(196, 196, 196, 1), rgba(196, 196, 196, 1));
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-bkg480.jpg'),
+      linear-gradient(to right, rgba(196, 196, 196, 1), rgba(196, 196, 196, 1));
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero-bkg960.jpg'),
+        linear-gradient(
+          to right,
+          rgba(196, 196, 196, 1),
+          rgba(196, 196, 196, 1)
+        );
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/hero-bkg768.jpg'),
+      linear-gradient(to right, rgba(196, 196, 196, 1), rgba(196, 196, 196, 1));
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../../images/hero-bkg1536.jpg'),
+        linear-gradient(
+          to right,
+          rgba(196, 196, 196, 1),
+          rgba(196, 196, 196, 1)
+        );
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/hero-bkg1600.jpg'),
+      linear-gradient(to right, rgba(196, 196, 196, 1), rgba(196, 196, 196, 1));
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../../images/hero-bkg3200.jpg'),
+        linear-gradient(
+          to right,
+          rgba(196, 196, 196, 1),
+          rgba(196, 196, 196, 1)
+        );
+    }
   }
 
   .container {
