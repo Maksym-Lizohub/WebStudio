@@ -4,7 +4,7 @@
   &__container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     @media (max-width: 767px) {
       height: 60px;
     }
@@ -38,15 +38,8 @@
     display: none;
   }
 }
-.no-scroll {
-  overflow: hidden;
-}
 
 .menu-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +51,6 @@
   border: none;
 
   cursor: pointer;
-  z-index: 10;
 
   &:focus {
     fill: $accent-color;
@@ -106,6 +98,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9;
 
   transform: translateX(100%);
 
@@ -132,6 +125,12 @@
 }
 .menu-btn.is-open .icon-open {
   opacity: 0;
+}
+
+.menu-btn.is-open {
+  position: relative;
+
+  z-index: 10;
 }
 
 .icon-close {
